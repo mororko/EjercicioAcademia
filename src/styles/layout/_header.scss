@@ -23,11 +23,9 @@
     font-size: 1.75rem;
     color: $color-text;
     cursor: pointer;
-    @include respond-to(tablet) {
-      /* still visible on tablet */
-    }
+
     @include respond-to(desktop) {
-      display: none; /* hide on desktop */
+      display: none;
     }
   }
 

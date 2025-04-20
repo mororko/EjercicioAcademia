@@ -1,0 +1,52 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.news-detail {
+  &__inner {
+    padding: 3rem 1rem;
+    @include respond-to(tablet) {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    font-family: $font-mono;
+    font-size: 2.5rem;
+    color: $color-primary;
+    margin-bottom: 1rem;
+    @include respond-to(tablet) {
+      font-size: 3rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    color: $color-muted;
+    margin-bottom: 1.5rem;
+  }
+
+  &__image {
+    margin: 0 auto 2rem;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__content {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: $color-text;
+    text-align: left;
+    @include respond-to(tablet) {
+      text-align: justify;
+    }
+  }
+}

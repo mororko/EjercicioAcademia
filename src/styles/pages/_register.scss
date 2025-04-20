@@ -1,0 +1,119 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.register {
+  padding: 4rem 1rem;
+
+  &__inner {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    @include respond-to(tablet) {
+      max-width: 600px;
+      margin: 0 auto 3rem;
+    }
+  }
+
+  &__title {
+    font-family: $font-mono;
+    font-size: 2.5rem;
+    color: $color-primary;
+    margin-bottom: 0.5rem;
+
+    @include respond-to(tablet) {
+      font-size: 3rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    color: $color-muted;
+  }
+}
+
+.register-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  input[type="date"] {
+    color: $color-text;
+
+    &::-webkit-calendar-picker-indicator {
+      filter: brightness(0) invert(1);
+    }
+
+    &::-moz-calendar-picker-indicator {
+      filter: brightness(0) invert(1);
+    }
+  }
+  .form-control {
+    position: relative;
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: $color-text;
+      font-weight: 600;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background: transparent;
+      border: 1px solid $color-muted;
+      opacity: 1;
+      border-radius: 4px;
+      color: $color-text;
+    }
+
+    .error-icon {
+      position: absolute;
+      right: 2.5rem;
+      top: 70%;
+      transform: translateY(-50%);
+      color: #ff6f5b;
+      display: none;
+    }
+    .error-msg {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      font-size: 0.75rem;
+      color: #ff6f5b;
+      display: none;
+    }
+
+    &.invalid {
+      input,
+      textarea {
+        border-color: #ff6f5b;
+      }
+      .error-icon,
+      .error-msg {
+        display: block;
+      }
+    }
+
+    &.valid {
+      input,
+      textarea {
+        border-color: $color-accent;
+      }
+    }
+  }
+
+  .btn {
+    align-self: center;
+    width: max-content;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .btn-outline {
+    align-self: center;
+    width: max-content;
+    padding: 0.5rem 1rem;
+  }
+}

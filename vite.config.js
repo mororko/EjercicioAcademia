@@ -2,6 +2,14 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
+  css: {
+    preprocessorOptions: {
+      scss: {
+        quietDeps: true,
+        silenceDeprecations: ["import"],
+      },
+    },
+  },
   build: {
     rollupOptions: {
       input: {

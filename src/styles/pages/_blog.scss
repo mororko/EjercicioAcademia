@@ -1,0 +1,78 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.blog {
+  &__inner {
+    padding: 4rem 1rem 2rem;
+    text-align: center;
+
+    @include respond-to(tablet) {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    font-family: $font-mono;
+    font-size: 2.75rem;
+    color: $color-primary;
+    margin-bottom: 0.5rem;
+
+    @include respond-to(tablet) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.125rem;
+    color: $color-muted;
+    margin-bottom: 2rem;
+
+    @include respond-to(tablet) {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.blog-grid {
+  @extend .card-grid;
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem auto;
+  grid-template-columns: 1fr;
+  justify-items: stretch;
+
+  @include respond-to(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  @include respond-to(desktop) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .card__body {
+      padding: 1.5rem;
+      h3 {
+        margin-bottom: 0.75rem;
+      }
+      p {
+        color: $color-text;
+        margin-bottom: 1rem;
+      }
+    }
+
+    a.btn-outline {
+      display: block;
+      margin: 0.75rem auto;
+      margin-bottom: 1rem;
+      width: max-content;
+    }
+  }
+}
