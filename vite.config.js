@@ -1,3 +1,4 @@
+// vite.config.js
 import { defineConfig } from "vite";
 import { resolve } from "path";
 
@@ -12,18 +13,18 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: "docs",
-    emptyOutDir: true,
+    outDir: "docs", // carpeta que servirá GH Pages
+    emptyOutDir: true, // la limpia antes de cada build
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        "quienes-somos": resolve(__dirname, "public/quienes-somos.html"),
-        cursos: resolve(__dirname, "public/cursos.html"),
-        blog: resolve(__dirname, "public/blog.html"),
-        registro: resolve(__dirname, "public/registro.html"),
-        login: resolve(__dirname, "public/login.html"),
-        contacto: resolve(__dirname, "public/contacto.html"),
-        "aviso-legal": resolve(__dirname, "public/aviso-legal.html"),
+        "quienes-somos": resolve(__dirname, "pages/quienes-somos.html"),
+        cursos: resolve(__dirname, "pages/cursos.html"),
+        blog: resolve(__dirname, "pages/blog.html"),
+        registro: resolve(__dirname, "pages/registro.html"),
+        login: resolve(__dirname, "pages/login.html"),
+        contacto: resolve(__dirname, "pages/contacto.html"),
+        "aviso-legal": resolve(__dirname, "pages/aviso-legal.html"),
       },
     },
   },
