@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/EjercicioAcademia/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro | Academia Conquer Blocks</title>
+    <meta
+      name="description"
+      content="Regístrate para empezar a aprender en Academia Conquer Blocks."
+    />
+    <base href="/EjercicioAcademia/" />
+    <script type="module" crossorigin src="/EjercicioAcademia/assets/main-B6qRDkvy.js"></script>
+    <link rel="stylesheet" crossorigin href="/EjercicioAcademia/assets/main-JRwc3R41.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+        <figure class="logo">
+          <img src="/EjercicioAcademia/assets/logotipo-DDLV-dB_.png" alt="Conquer Blocks Logo" />
+        </figure>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="registro.html" aria-current="page">Registro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Registro -->
+    <main>
+      <section class="register container">
+        <div class="register__inner">
+          <h1 class="register__title">Registro</h1>
+          <p class="register__subtitle">
+            Para acceder a todos los cursos, completa este formulario.
+          </p>
+        </div>
+        <form class="register-form" enctype="multipart/form-data" novalidate>
+          <div class="form-control">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" required />
+            <span class="error-icon">⚠️</span>
+            <span class="error-msg">Debes ingresar tu nombre</span>
+          </div>
+
+          <div class="form-control">
+            <label for="birthday">Fecha de nacimiento</label>
+            <input type="date" id="birthday" />
+            <span class="error-icon">⚠️</span>
+            <span class="error-msg">Debes seleccionar tu fecha</span>
+          </div>
+
+          <div class="form-control">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" required />
+            <span class="error-icon">⚠️</span>
+            <span class="error-msg">Correo no válido</span>
+          </div>
+
+          <div class="form-control">
+            <label for="address">Dirección</label>
+            <input type="text" id="address" />
+          </div>
+
+          <div class="form-control">
+            <label for="web">Página web</label>
+            <input type="url" id="web" />
+          </div>
+
+          <div class="form-control">
+            <label for="photo">Foto de perfil</label>
+            <input type="file" id="photo" accept="image/*" />
+          </div>
+
+          <div class="form-control">
+            <label for="bio">Biografía</label>
+            <textarea id="bio" rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Enviar</button>
+          <input type="reset" class="btn-outline" value="Borrar formulario" />
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; Conquer Blocks 2025 -
+          <a href="aviso-legal.html">Aviso Legal</a>
+        </p>
+      </div>
+    </footer>
+
+    <div class="page-overlay"></div>
+  </body>
+</html>

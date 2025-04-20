@@ -1,0 +1,91 @@
+<!-- src/blog.html -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/EjercicioAcademia/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog | Academia Conquer Blocks</title>
+    <meta
+      name="description"
+      content="No te pierdas las últimas noticias sobre el mundo Full Stack"
+    />
+    <base href="/EjercicioAcademia/" />
+    <script type="module" crossorigin src="/EjercicioAcademia/assets/main-B6qRDkvy.js"></script>
+    <link rel="stylesheet" crossorigin href="/EjercicioAcademia/assets/main-JRwc3R41.css">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+        <figure class="logo">
+          <img src="/EjercicioAcademia/assets/logotipo-DDLV-dB_.png" alt="Conquer Blocks Logo" />
+        </figure>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="blog.html" aria-current="page">Blog</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Blog Listing -->
+    <main>
+      <section class="blog container">
+        <div class="blog__inner">
+          <h1 class="blog__title">Últimas Noticias</h1>
+          <p class="blog__subtitle">
+            Descubre lo más reciente del sector Full Stack
+          </p>
+        </div>
+
+        <div class="blog-grid">
+          <article class="card">
+            <div class="card__body">
+              <h3>Datos curiosos sobre IA</h3>
+              <p>
+                La inteligencia artificial (IA) está revolucionando cómo
+                interactuamos con el mundo. Desde asistentes virtuales hasta
+                algoritmos en medicina y ciencia, la IA nos permite analizar
+                datos a gran escala.
+              </p>
+            </div>
+            <a href="noticia1.html" class="btn-outline">Ver noticia</a>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <h3>5 imprescindibles para un programador</h3>
+              <p>
+                Control de versiones (Git), dominio de un lenguaje base,
+                algoritmos y estructuras de datos… descubre qué no puede faltar
+                en tu kit de programación.
+              </p>
+            </div>
+            <a href="noticia2.html" class="btn-outline">Ver noticia</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; Conquer Blocks 2025 -
+          <a href="aviso-legal.html">Aviso Legal</a>
+        </p>
+      </div>
+    </footer>
+
+    <div class="page-overlay"></div>
+  </body>
+</html>
