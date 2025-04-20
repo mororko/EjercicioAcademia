@@ -1,0 +1,53 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.legal {
+  padding: 4rem 1rem;
+  text-align: left;
+
+  &__title {
+    font-family: $font-mono;
+    font-size: 2.5rem;
+    color: $color-primary;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  &__updated {
+    font-size: 0.9rem;
+    color: $color-muted;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: $color-text;
+
+    h2 {
+      font-family: $font-mono;
+      font-size: 1.75rem;
+      color: $color-secondary;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @include respond-to(tablet) {
+    & {
+      padding: 6rem 1rem;
+    }
+    &__title {
+      font-size: 3rem;
+    }
+    &__content {
+      font-size: 1rem;
+    }
+  }
+}

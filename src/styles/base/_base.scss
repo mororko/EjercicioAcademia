@@ -1,0 +1,41 @@
+body {
+  font-family: $font-sans;
+  background: $color-bg;
+  color: $color-text;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+a {
+  color: $color-accent;
+  text-decoration: none;
+  transition: color 0.2s;
+  &:hover {
+    color: $color-secondary;
+  }
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.page-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 50;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+figcaption {
+  display: none;
+}

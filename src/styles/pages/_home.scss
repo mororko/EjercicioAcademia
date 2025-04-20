@@ -1,0 +1,53 @@
+.hero {
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+  position: relative;
+
+  &__inner {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    z-index: 1;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    font-family: $font-mono;
+  }
+
+  &__subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.intro,
+.courses-preview,
+.news-preview {
+  padding: 3rem 0;
+  text-align: center;
+
+  h2 {
+    font-family: $font-mono;
+    font-size: 1.75rem;
+    color: $color-primary;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $color-text;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.courses-preview,
+.news-preview {
+  .btn-outline {
+    margin-top: 2.5rem;
+  }
+}

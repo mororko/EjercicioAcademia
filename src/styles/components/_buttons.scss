@@ -1,0 +1,29 @@
+.btn,
+.btn-outline {
+  display: inline-block;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.btn {
+  background: linear-gradient(135deg, $color-primary, $color-secondary);
+  color: #111;
+  box-shadow: 0 4px 14px rgba($color-secondary, 0.5);
+  &:hover {
+    background-position: 100% 0;
+    box-shadow: 0 6px 20px rgba($color-secondary, 0.7);
+  }
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid $color-accent;
+  color: $color-accent;
+  &:hover {
+    background: $color-accent;
+    color: #111;
+  }
+}

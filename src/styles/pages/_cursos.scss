@@ -1,0 +1,66 @@
+.courses-page {
+  &__intro {
+    padding: 4rem 1rem 2rem;
+    text-align: center;
+
+    @include respond-to(tablet) {
+      padding-top: 6rem;
+    }
+  }
+
+  &__title {
+    font-family: $font-mono;
+    font-size: 2.75rem;
+    color: $color-primary;
+    margin-bottom: 1rem;
+
+    @include respond-to(tablet) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__text {
+    max-width: 700px;
+    margin: 0 auto;
+    color: $color-text;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.courses-grid {
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem auto;
+  grid-template-columns: 1fr;
+  justify-items: stretch;
+
+  @include respond-to(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  @include respond-to(desktop) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card__body {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  a.btn-outline {
+    display: block;
+    margin: 0.75rem auto;
+    margin-bottom: 1rem;
+    width: max-content;
+  }
+}

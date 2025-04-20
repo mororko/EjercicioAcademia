@@ -23,8 +23,8 @@
         <!-- nav -->
         <nav class="main-nav">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="quienes-somos.html">Quienes Somos</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
             <li><a href="cursos.html">Cursos</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="registro.html">Registro</a></li>
@@ -38,23 +38,26 @@
     </header>
     <!-- Main -->
     <main>
-      <section class="hero container">
-        <h1>Bienvenido a la academia FullSatck</h1>
-        <p>
-          Domina el desarrollo web con nuestra academia de programación Full
-          Stack. Aprende HTML, CSS, JavaScript, React, Node.js y más.
-          ¡Transforma tu carrera con formación práctica y proyectos reales!
-        </p>
-        <figure class="hero-image">
-          <figcaption>
-            Panel de control de la Academia Conquer Blocks
-          </figcaption>
-          <img
-            src="./src/images/escola-programacio.jpg"
-            alt="Aprende a programar"
-          />
-        </figure>
+      <section class="hero">
+        <div class="hero__inner container">
+          <h1 class="hero__title">Bienvenido a la academia FullStack</h1>
+          <p class="hero__subtitle">
+            Domina el desarrollo web con nuestra academia de programación Full
+            Stack. Aprende HTML, CSS, JavaScript, React, Node.js y más.
+            ¡Transforma tu carrera con formación práctica y proyectos reales!
+          </p>
+          <figure class="hero__image">
+            <img
+              src="./src/images/escola-programacio.jpg"
+              alt="Panel de control de la Academia Conquer Blocks"
+            />
+            <figcaption>
+              Panel de control de la Academia Conquer Blocks
+            </figcaption>
+          </figure>
+        </div>
       </section>
+
       <section class="intro container">
         <h2>Descubre quienes somos</h2>
         <p>Descubre los profesionales que trabajan en la academia</p>
@@ -123,6 +126,7 @@
         </p>
       </div>
     </footer>
+    <div class="page-overlay"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

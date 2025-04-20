@@ -1,0 +1,11 @@
+@mixin respond-to($break) {
+  @if $break == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  } @else if $break == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+}
