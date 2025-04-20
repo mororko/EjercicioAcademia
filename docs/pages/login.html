@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesión | Academia Conquer Blocks</title>
+    <meta
+      name="description"
+      content="Inicia sesión para acceder al contenido de Academia Conquer Blocks."
+    />
+    <base href="/EjercicioAcademia/" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+        <figure class="logo">
+          <img src="/src/images/logotipo.png" alt="Conquer Blocks Logo" />
+        </figure>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="/cursos.html">Cursos</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/registro.html">Registro</a></li>
+            <li><a href="/login.html" aria-current="page">Login</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Login Section -->
+    <main>
+      <section class="login container">
+        <div class="login__inner">
+          <h1 class="login__title">Iniciar sesión</h1>
+          <p class="login__subtitle">
+            Para acceder necesitas iniciar sesión con tu correo y contraseña.
+          </p>
+        </div>
+        <form class="login-form" novalidate>
+          <div class="form-control">
+            <label for="login-email">Correo electrónico</label>
+            <input
+              type="email"
+              id="login-email"
+              placeholder="tucorreo@ejemplo.com"
+              required
+            />
+            <span class="error-icon">⚠️</span>
+            <span class="error-msg">Correo no válido</span>
+          </div>
+
+          <div class="form-control">
+            <label for="login-pass">Contraseña</label>
+            <input
+              type="password"
+              id="login-pass"
+              placeholder="********"
+              required
+            />
+            <span class="error-icon">⚠️</span>
+            <span class="error-msg">La contraseña es obligatoria</span>
+          </div>
+
+          <button type="submit" class="btn">Entrar</button>
+          <input type="reset" class="btn-outline" value="Borrar" />
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; Conquer Blocks 2025 -
+          <a href="/aviso-legal.html">Aviso Legal</a>
+        </p>
+      </div>
+    </footer>
+
+    <div class="page-overlay"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

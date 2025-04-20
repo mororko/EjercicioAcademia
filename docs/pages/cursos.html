@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursos | Academia Conquer Blocks</title>
+    <meta
+      name="description"
+      content="Más de 6000 alumnos han confiado en nuestros cursos Full-Stack, Blockchain, IA y Ciberseguridad."
+    />
+    <base href="/EjercicioAcademia/" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+        <figure class="logo">
+          <img src="./src/images/logotipo.png" alt="Conquer Blocks Logo" />
+        </figure>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="/cursos.html" aria-current="page">Cursos</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/registro.html">Registro</a></li>
+            <li><a href="/login.html">Login</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section class="courses-page container">
+        <!-- Intro -->
+        <div class="courses-page__intro">
+          <h1 class="courses-page__title">Nuestros Cursos</h1>
+          <p class="courses-page__text">
+            Más de <strong>6000</strong> alumnos han confiado en nuestra
+            formación. En Conquer Blocks, tu éxito profesional es nuestra
+            misión. Descubre todos los cursos disponibles y elige el que mejor
+            encaje con tus metas.
+          </p>
+        </div>
+
+        <!-- Grid de cursos -->
+        <div class="card-grid courses-grid">
+          <article class="card">
+            <div class="card__body">
+              <h3>FullStack 1</h3>
+              <p>Fundamentos de Python</p>
+            </div>
+            <a href="/cursos/curso-fullstack1.html" class="btn-outline"
+              >Ver curso</a
+            >
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <h3>FullStack 2</h3>
+              <p>Fundamentos de HTML y CSS</p>
+            </div>
+            <a href="/cursos/curso-fullstack2.html" class="btn-outline"
+              >Ver curso</a
+            >
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; Conquer Blocks 2025 -
+          <a href="/aviso-legal.html">Aviso Legal</a>
+        </p>
+      </div>
+    </footer>
+
+    <div class="page-overlay"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
